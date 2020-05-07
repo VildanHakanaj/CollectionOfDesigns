@@ -1,0 +1,68 @@
+@import 'normalize'
+
+
+=shadowInset($color)
+    box-shadow: inset 0 0 0 3px $color
+    color: $color
+
+body
+    background-color: #dcdde1
+
+.social
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    ul
+        margin: 0
+        padding: 0
+        padding: 1em
+        li
+            list-style: none
+            display: inline-block
+            a
+                box-sizing: border-box
+                text-align: center
+                text-decoration: none
+                // background-color: red
+                font-size: 30px
+                color: #fff
+                width: 60px
+                height: 60px
+                border-radius: 30px
+                padding-top: 15px
+                transition: all .5s ease-in-out
+                box-shadow: inset 0 0 0 40px rgba(0, 0, 0, .75)
+                &:hover
+                    // color: #222
+.fa-snapchat:hover
+    +shadowInset(#FFFC00)
+.fa-facebook-f:hover
+    +shadowInset(#3b5998)
+.fa-instagram:hover
+    +shadowInset(#C32AA3)
+.fa-github-alt:hover
+    +shadowInset(#211f1f)
+.fa-linkedin-in:hover
+    +shadowInset(#007bb6)
+.fa-skype:hover
+    +shadowInset(#00AFF0)
+.fa-dribbble:hover
+    +shadowInset(#ea4c89)
+.fa-google-plus-square:hover
+    +shadowInset(#dc4e41 )
+.fa-youtube:hover
+    +shadowInset(#b31217 )
+.fa-twitter:hover
+    +shadowInset(#55acee)
+.fa-google-play:hover
+    +shadowInset(#48FF48)
+.fa-google-drive:hover
+    +shadowInset(#FFD400)
+.fa-google:hover
+    +shadowInset(#4285F4)
+.fa-slack:hover
+    +shadowInset(#e01563)
+.fa-mailchimp:hover
+    +shadowInset(#000)
+

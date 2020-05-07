@@ -1,0 +1,67 @@
+@import "normalize"
+
+body
+  background-color: #ED4C67
+
+.social
+  text-align: center
+  margin: 0 auto
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.fab
+  font-size: 30px
+  color: #fff
+
+a
+  width: 40px
+  height: 40px
+  padding: 1em
+  font-size: 30px
+  text-align: center
+  text-decoration: none
+  background-color: rgba(255,255,255, .4)
+  border-radius: 10px
+  position: relative
+  margin: 3px
+  &:hover
+    background-color: rgba(255,255,255, .6)
+  &:hover span
+    bottom: 120px
+    visibility: visible
+    opacity: 1
+    z-index: -1
+span
+  color: #666
+  background-color: #fff
+  position: absolute
+  font-family: verdana
+  bottom: 0
+  left: -25px
+  right: -25px
+  padding: 20px
+  font-size: 14px
+  border-radius: 10px
+  visibility: hidden
+  opacity: 1
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+  z-index: -1
+  letter-spacing: 1px 
+  font-weight: 300
+  text-transform: uppercase
+  &:before
+    content: ' '
+    width: 0
+    height: 0
+    border-left: 5px solid transparent
+    border-right: 5px solid transparent 
+    border-top: 5px solid #fff
+    position: absolute
+    bottom: -4.5px
+    left: 70px
+
+
+
+  
