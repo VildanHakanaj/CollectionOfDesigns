@@ -1,0 +1,91 @@
+//fonts
+$roboto:  'Roboto', cursive
+$lobster: 'Lobster', cursive
+//fonts color
+$primary-font: #d0d0d1
+//Design Colors
+$bg: #eef1f8
+$primary: #acc0e9
+$black: #000000
+$white: #ffffff
+//Other
+$shadow: 0 3px 6px rgba($primary, 0.16), 0 3px 6px rgba($primary, 0.23)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: $bg
+.card
+    background-color: $white
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 400px
+    border-radius: 10px
+    box-shadow: $shadow
+    .card-header
+        background-color: $primary
+        height: 150px
+        position: relative
+        text-align: center
+        border-radius: 10px 10px 0 0
+        .fa-facebook
+            position: absolute
+            top: 20px
+            left: 20px
+            color: $white
+            font-size: 20px
+        .plus
+            position: absolute
+            top: -20px
+            right: -20px
+            background-color: $primary
+            width: 50px
+            height: 50px
+            border-radius: 30px
+            line-height: 50px
+            color: $white
+            font-size: 30px
+            font-weight: 700
+            box-shadow: 0 4px 6px rgba(#8Fa5d9, .5)
+            a
+                text-decoration: none
+                color: $white
+        .avatar
+            margin-top: 85px
+            width: 130px
+            height: 130px
+            border-radius: 130px
+            border: 4px solid rgba($white, .9)
+            box-shadow: 0 4px 6px rgba(#8Fa5d9, .5)
+
+.card-body
+    padding: 1em
+    text-align: center
+    h1
+        color: darken($primary-font, 20%)
+        font-family: $lobster
+        font-weight: 300
+        margin-top: 70px
+        margin-bottom: 30px
+    p
+        width: 300px
+        margin: 0 auto
+        color: $primary-font
+        line-height: 1.5
+        margin-bottom: 50px 
+.card-footer
+    height: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    .fa
+        padding: 0 20px
+        color: darken($primary-font, 20%)
+
+
+    

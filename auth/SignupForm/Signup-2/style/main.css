@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #111111;
+}
+
+.container {
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 600px;
+}
+
+.container .nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #444444;
+  padding: 50px 80px 50px 50px;
+}
+
+.container .nav h5 {
+  margin-bottom: 50px;
+  color: #d1d1d1;
+}
+
+.container .nav h5 span {
+  color: #f13c55;
+}
+
+.container .nav h2 {
+  color: #d1d1d1;
+  font-size: 48px;
+  font-weight: 100;
+}
+
+.container .nav nav {
+  position: fixed;
+  bottom: 0;
+}
+
+.container .nav nav ul {
+  list-style-type: none;
+  color: #f13c55;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .nav nav ul li {
+  margin: 0 10px 50px;
+}
+
+.container .form-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 120px 30px 0 50px;
+}
+
+.container .form-container label {
+  display: block;
+  color: #d1d1d1;
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.container .form-container [type=text], .container .form-container [type=password], .container .form-container [type=email] {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  outline: none;
+  font-size: 20px;
+  color: #a59e9f;
+  margin-bottom: 20px;
+}
+
+.container .form-container input[type=password] {
+  color: #f13c55;
+}
+
+.container .form-container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .form-container .buttons .btn {
+  background-color: #f13c55;
+  color: white;
+  border-radius: 50px;
+  width: 150px;
+  height: 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  border: none;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.container .form-container .buttons a {
+  display: inline-block;
+  color: #a59e9f;
+  font-size: 14px;
+}
+/*# sourceMappingURL=main.css.map */

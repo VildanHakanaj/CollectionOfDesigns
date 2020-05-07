@@ -1,0 +1,107 @@
+$font: 'Roboto', sans-serif;
+$primary: #5c76e4
+$shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+$shadow2: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+$shadow-hover: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+$bezier: all 0.3s cubic-bezier(.25,.8,.25,1)
+
+*
+    margin: 0
+    padding: 0
+    font-size: 16px 
+    list-style-type: none
+body
+    font-family: $font
+    width: 100%
+    min-height: 100vh
+.card
+    width: 400px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    box-shadow: $shadow
+    padding: 2em
+    border-radius: 40px
+    .card-header
+        display: flex
+        justify-content: space-between
+        margin-bottom: 50px
+        .add-floater
+            transition: $bezier
+            box-shadow: $shadow
+            font-size: 30px
+            width: 50px
+            height: 50px
+            border-radius: 50px
+            color: white
+            font-weight: 300
+            background-color: $primary
+            text-align: center
+            line-height: 50px
+            &:hover
+                box-shadow: $shadow-hover 
+
+        h1
+            margin-bottom: 5px
+        .subtitle
+            font-size: 12px
+            color: $primary
+            font-weight: bold
+    .card-body
+        width: 100%
+        box-sizing: border-box
+        li
+            padding: 1em
+            display: flex
+            line-height: 2
+            position: relative
+            &:after
+                transition: $bezier
+                position: absolute
+                content: ''
+                width: 1px
+                height: 1px
+                border-right: 200px solid #d0d0d1
+                bottom: 0
+                left: 60px
+            &:hover:after
+                top: 33px
+                border-color: #000000
+
+            .circle
+                display: inline-block
+                width: 20px
+                height: 20px
+                border-radius: 30px
+                background-color: transparent
+                border: 2px solid #d0d0d1
+                margin-right: 20px
+                &:hover li ~ .line
+                    bottom: 30px
+    .card-footer
+        margin: 30px 0 10px
+        box-sizing: border-box
+        width: 100%
+        text-align: center
+        padding: 1em
+        display: flex
+        justify-content: space-around
+        .btn
+            box-shadow: $shadow
+            background-color: $primary
+            text-decoration: none
+            font-weight: 300
+            color: white
+            width: 150px
+            font-size: 13px
+            text-transform: uppercase
+            box-sizing: border-box
+            height: 50px
+            line-height: 50px
+            border-radius: 50px
+            &:hover
+                box-shadow: $shadow-hover
+
+
