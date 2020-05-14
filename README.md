@@ -58,3 +58,14 @@ For each of the components if I have gotten the design elsewhere there will be a
 ![](https://github.com/VildanHakanaj/CollectionOfDesigns/blob/master/images/todolist-1.png)
 </details>
 
+# Social Media
+<details>
+  <summary>Click Here To Expand!</summary>
+  
+### Social-icons-1
+![](https://github.com/VildanHakanaj/CollectionOfDesigns/blob/master/images/social-media-1.png)
+
+### Social-icons-2
+![](https://github.com/VildanHakanaj/CollectionOfDesigns/blob/master/images/social-media-2.png)
+</details>
+
