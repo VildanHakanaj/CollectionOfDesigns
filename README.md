@@ -28,6 +28,9 @@ For each of the components if I have gotten the design elsewhere there will be a
     
   ### Signup-2
   ![](https://github.com/VildanHakanaj/CollectionOfDesigns/blob/master/images/signup-2.png)
+  
+  ### Signup-3
+  ![](https://github.com/VildanHakanaj/CollectionOfDesigns/blob/master/images/signup-3.jpg)
   </details>
 </details>
 
