@@ -9,12 +9,128 @@
     --f-family: 'Poppins', sans-serif;
     --mobile: 375px;
     --desktop: 1440px;
+    --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
 }
 
 
-.container{
-    width: 1440px;
-    margin: 0 auto;
+*, h2{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
     background-color: var(--primary);
 }
+.container{
+    max-width: 1440px;
+    width: 1440px;
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 163px;
+    background-image: url(images/bg-intro-desktop.png);
+    align-items: center;
+}
+
+.left{
+    flex: 1;
+    color: white;
+}
+
+.left .headline{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 51px;
+    margin-bottom: 25px;
+}
+
+.left p{
+    max-width: 487px;
+    width: 487px;
+}
+
+.right{
+    padding-top: 122px;
+    flex: 1;
+}
+
+.right .info{
+    height: 56px;
+    width: 573px;
+    text-align: center;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    line-height: 56px;
+    background-color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+}
+
+.right .info span{
+    font-weight: 300;
+}
+
+.right form{
+    padding: 2.3rem;   
+    background-color: white;
+    width: 573px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: var(--shadow);
+    max-height: 473px;
+    height: 473px;
+
+}
+
+.right form .fields, .submit{
+    height: 54px;
+    border-radius: 7px;
+    margin-bottom: 17px;
+}
+
+.right .fields{
+    border: 2px solid var(--gray);
+    padding-left: 2rem;
+    color: var(--dark-blue);
+    font-weight: bold;
+    outline: none;
+}
+
+.right .fields:focus{
+    border-color: var(--dark-blue);
+}
+
+.right .fields::placeholder{
+    color: var(--gray);
+}
+
+
+.right form .submit{
+    background-color: var(--primary-green);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 2px;
+}
+
+.right form p{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray);
+    text-align: center;
+}
+
+.right form p a{
+    text-decoration: none;
+    color: var(--primary);
+
+}
+
 
